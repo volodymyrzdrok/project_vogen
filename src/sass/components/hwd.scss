@@ -1,0 +1,140 @@
+
+
+.hwd-title {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.hwd-list {
+    list-style: none;
+    margin-top: 40px;
+    font-size: 0;
+    padding: 0;
+}
+
+
+.hwd-list_card {
+    // padding: 30px 35px 50px 35px;
+    padding-top: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-bottom: 15px;
+    // width: 280px;
+    height: 270px;
+    background-color: $white-color;
+    box-shadow: $shadow;
+    transition: all .25s;
+}
+
+.hwd-list_card-icon {
+    height: 50px;
+    width: 50px;
+    background-color: none;
+    fill: #ff6b08;
+    display: block;
+    margin: 0 auto;
+    transition: 0.25s;
+}
+
+.hwd-list_title {
+    font-size: 13px;
+    font-weight: bold;
+    color: $title-color;
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.hwd-list_title::after {
+    content: '';
+    height: 2px;
+    width: 25px;
+    background-color: #ff6b08;
+    display: table;
+    margin: 25px auto 20px auto;
+}
+
+.hwd-list_sub-title {
+    font-size: 11px;
+    text-align: center;
+    color: #858585;
+    line-height: 20px;
+}
+
+.hwd-list_card:hover {
+
+    background-color: $hover-color;
+
+    .hwd-list_title {
+        color: $white-color;
+    }
+    
+    .hwd-list_title::after {
+        background-color: $white-color;
+    }
+    
+    .hwd-list_card-icon{
+        fill: $white-color;
+        background-color: $hover-color;
+    }
+
+    .hwd-list_sub-title{
+        color: $white-color;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+    .hwd-title {
+        font-style: 26px;
+    }
+
+    .hwd-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .hwd-list_card {
+        width: calc(100% / 2 - 20px);
+        margin-bottom: 25px;
+    }
+
+    .hwd-list_title {
+        font-size: 13px;
+    }
+
+    .hwd-list_sub-title {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .hwd-title {
+        text-align: left;
+        font-size: 42px;
+    }
+
+    .hwd-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .hwd-list_card {
+        width: 390px;
+        height: 340px;
+        margin-bottom: 25px;
+        padding: 60px 40px 60px 40px;
+
+    }
+
+    .hwd-list_title {
+        font-size: 18px;
+    }
+
+    .hwd-list_sub-title {
+        font-size: 15px;
+    }
+}

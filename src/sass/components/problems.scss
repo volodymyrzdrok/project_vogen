@@ -1,0 +1,159 @@
+
+.problems {
+        
+    margin-bottom: 20px;
+
+    &.bg-problems {
+    
+
+        padding-top: 25px;
+        background-color: #111517;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: white;
+            height: 25%;
+            z-index: 1;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            background-image: url('../images/fire.png');
+            background-repeat: no-repeat;
+            background-position: right 35px;
+            height: 75%;
+            // z-index: 1;
+            @media screen and (min-width: 768px) and (max-width: 1279px) {
+            background-position: right bottom;
+        }
+            @media screen and (max-width: 767px) {
+                display: none;
+            }
+        }
+    }
+
+    .problems-title {
+        color: $white-color;
+        width: 260px;
+        font-weight: 800;
+        line-height: 30px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        @media screen and (min-width: 768px) and (max-width: 1279px) {
+            font-size: 24px;
+            width: 450px;
+        }
+        @media screen and (min-width: 1280px) {
+            font-size: 42px;
+            line-height: 55px;
+            width: 740px;
+        }
+    }
+    .problem-title_orange{
+        color: #ff6b08;
+        margin: 0;
+        padding: 0;
+        
+    }
+}
+
+
+
+.problems-list {
+    list-style: none;
+    box-shadow: $shadow;
+    background-color: $white-color;
+    margin: 0;
+    font-size: 0;
+    display: block;
+    padding: 25px 30px 40px 35px;
+    position: relative;
+    z-index: 999;
+    // // transform: translateY(-50%);
+    // width: 280px;
+    
+}
+
+
+
+.problems-list__item {
+    margin-bottom: 24px;
+    font-family: $ff-montserrat;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.problems-list__item:last-child{
+    margin-bottom: 0;
+}
+
+.problems-list__item-number {
+    margin-bottom: 10px;
+    color: #ff6b08;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    font-family: $ff-montserrat;
+    font-weight: 600;
+}
+
+.problems-list__item-number::before {
+    content: '';
+    height: 2px;
+    width: 25px;
+    background-color: #ff6b08;
+    display: table;
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    
+    .problems {
+        
+    .problems-title {
+        font-size: 26px;
+
+    }
+}
+    .problems-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 40px;
+        padding-right: 80px;
+        padding-left: 90px;
+    }
+
+    .problems-list__item {
+        width: 230px;
+        margin-bottom: 30px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+
+    .problems-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 40px;
+        padding-right: 90px;
+        padding-left: 90px;
+    }
+
+    .problems-list__item {
+        width: 280px;
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+}
