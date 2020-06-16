@@ -1,0 +1,99 @@
+@media screen and (max-width: 1279px) {
+    .nav-site--none-scroll {
+        overflow: hidden;
+    }
+    .nav-site {
+        padding-top: 116px;
+        position: absolute;
+        overflow-y: hidden;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(36, 36, 36, 0.88);
+        z-index: 1;
+        transform: translateY(-100%);
+        transition: all $animation;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-site__container {
+        display: block;
+        z-index: 2;
+    }
+
+    .nav-home__burger {
+        margin-right: 5px;
+        display: block;
+        position: relative;
+        width: 28px;
+        height: 19px;
+        z-index: 3;
+        cursor: pointer;
+    }
+
+    .nav-home__burger::before,
+    .nav-home__burger::after {
+        content: "";
+        background-color: $title-color;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        transition: all $animation;
+    }
+
+    .nav-home__burger::before {
+        top: 0;
+    }
+
+    .nav-home__burger::after {
+        bottom: 0;
+    }
+
+    .nav-home__burger--middle {
+        content: "";
+        background-color: $title-color;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        top: 8px;
+        transition: all $animation;
+    }
+
+    .nav-home__burger--active::before {
+        transform: rotate(45deg);
+        top: 7px;
+    }
+
+    .nav-home__burger--active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .nav-home__burger--active .nav-home__burger--middle {
+        transform: scale(0);
+    }
+
+    .nav-site.nav-home__burger--active {
+        transform: translateY(0);
+    }
+
+    .nav-home__burger--active {
+        top: 0;
+    }
+
+    .nav-home__burger--active .nav-site__link {
+        color: $white-color;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1278px) {
+    .nav-home__burger {
+        margin-left: 50px;
+    }
+}
