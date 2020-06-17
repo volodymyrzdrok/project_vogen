@@ -1,0 +1,213 @@
+.hidden-line {
+   display: none;
+}
+
+.teacher {
+   position: relative;
+   // top: -100px;
+   // left: 0;
+
+   &__title {
+      font-family: $ff-montserrat;
+      font-size: 20px;
+      font-weight: 800;
+      color: #111517;
+      margin-top: 46px;
+      margin-bottom: 28px;
+   }
+
+   &__img {
+      background-image: url("../images/teacher/mobile-teacher.jpg");
+      background-size: cover;
+      width: 279px;
+      height: 214px;
+   }
+
+   &__name {
+      font-family: $ff-montserrat;
+      font-size: 16px;
+      font-weight: 800;
+      position: relative;
+
+      &::after {
+         content: "";
+         display: block;
+         width: 280px;
+         height: 1px;
+         background-color: #d1d1d1;
+         position: absolute;
+         top: 26px;
+         left: 0;
+      }
+   }
+   &__list {
+      font-family: $ff-montserrat;
+      font-size: 13px;
+      font-weight: 600;
+   }
+
+   &__list-box {
+      display: flex;
+      margin-top: 26px;
+   }
+
+   &__icon-text {
+      width: 226px;
+   }
+
+   &__icon-svg {
+      margin-right: 20px;
+      width: 16px;
+      height: 14px;
+      fill: #e16b1d;
+   }
+
+   &__info {
+      font-family: $ff-montserrat;
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 20px;
+      color: #858585;
+      width: 244px;
+   }
+   &__education {
+      margin-top: 56px;
+      position: relative;
+
+      &::before {
+         content: "";
+         display: block;
+         width: 26px;
+         height: 2px;
+         background-color: #ff6b08;
+         position: absolute;
+         top: -30px;
+         left: 0;
+      }
+   }
+   &__link {
+      color: #ff6b08;
+   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+   .container {
+      padding-left: 40px;
+      padding-right: 40px;
+      width: 768px;
+   }
+
+   .hidden-line {
+      display: inline;
+   }
+
+   .flex {
+      display: grid;
+      grid-template-columns: 250px 440px;
+   }
+
+   .teacher {
+      &__title {
+         font-size: 26px;
+      }
+      &__img {
+         background-image: url("../images/teacher/tablet-teacher.jpg");
+         background-size: cover;
+         width: 246px;
+         height: 321px;
+      }
+
+      &__box-tablet2 {
+         padding-top: 78px;
+         padding-left: 42px;
+      }
+
+      &__name {
+         font-size: 20px;
+
+         &::after {
+            content: "";
+            display: block;
+            width: 398px;
+            height: 1px;
+            background-color: #d1d1d1;
+            position: absolute;
+            top: 28px;
+            left: 0;
+         }
+      }
+
+      &__icon-text {
+         width: 328px;
+      }
+
+      &__info {
+         width: 368px;
+      }
+   }
+}
+
+@media screen and (min-width: 1280px) {
+   .container {
+      padding-left: 35px;
+      padding-right: 35px;
+      width: 1280px;
+   }
+
+   .hidden-line {
+      display: inline;
+   }
+
+   .flex {
+      display: grid;
+      grid-template-columns: 494px 714px;
+   }
+
+   .teacher {
+      &__title {
+         font-size: 42px;
+      }
+      &__img {
+         background-image: url("../images/teacher/desktop-teacher.jpg");
+         background-size: cover;
+         width: 493px;
+         height: 644px;
+      }
+
+      &__box-tablet2 {
+         padding-top: 86px;
+         padding-left: 82px;
+      }
+
+      &__name {
+         font-size: 29px;
+
+         &::after {
+            content: "";
+            display: block;
+            width: 600px;
+            height: 1px;
+            background-color: #d1d1d1;
+            position: absolute;
+            top: 44px;
+            left: 0;
+         }
+      }
+
+      &__education::before {
+         top: -40px;
+      }
+
+      &__icon-text {
+         width: 440px;
+         font-size: 17px;
+      }
+
+      &__info {
+         width: 590px;
+         font-size: 17px;
+         line-height: 30px;
+         margin-top: 80px;
+      }
+   }
+}

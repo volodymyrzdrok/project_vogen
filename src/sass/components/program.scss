@@ -1,0 +1,214 @@
+.program {
+   background-color: $program-color;
+
+   &__container-line {
+      position: relative;
+      width: 767px;
+   }
+   &__line {
+      display: inline-block;
+      border-right: 2px solid #546264;
+      width: 2px;
+      height: 1000px;
+      margin-left: 72px;
+      position: absolute;
+      top: 6px;
+      left: 0;
+   }
+
+   &__title {
+      font-family: $ff-montserrat;
+      font-size: 20px;
+      font-weight: 800;
+      color: white;
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 38px;
+      margin-top: 0;
+   }
+
+   &__list {
+      margin: 0 auto;
+      width: 150px;
+      padding-left: 34px;
+
+      &-itemh3 {
+         color: white;
+         font-size: 15px;
+         font-weight: 700;
+         text-transform: uppercase;
+         position: relative;
+
+         &::before {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: #ff6b08;
+            border-radius: 50%;
+            position: absolute;
+            top: 4px;
+            left: -36px;
+         }
+      }
+
+      &-itemh4 {
+         font-family: $ff-montserrat;
+         font-size: 13px;
+         font-weight: 500;
+         color: #ff6b08;
+         padding-left: 38px;
+         position: relative;
+
+         &::before {
+            content: "";
+            display: block;
+            width: 26px;
+            height: 2px;
+            background-color: #ff6b08;
+            position: absolute;
+            top: 7px;
+            left: 0;
+         }
+      }
+
+      &-item {
+         font-family: $ff-montserrat;
+         font-size: 11px;
+         font-weight: 400;
+         color: #858585;
+      }
+   }
+
+   &__box-img {
+      position: relative;
+      padding-bottom: 440px;
+   }
+
+   &__img {
+      background: url("../images/program/mobile.jpg");
+      background-size: cover;
+
+      position: absolute;
+      width: 122px;
+      height: 150px;
+      top: -26px;
+      right: 0;
+   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+   .container {
+      padding-left: 40px;
+      padding-right: 40px;
+      width: 768px;
+   }
+
+   .program {
+      &__title {
+         text-align: left;
+      }
+      &__list {
+         width: 548px;
+      }
+
+      &__line {
+         height: 560px;
+      }
+
+      &__box-img {
+         position: relative;
+         padding-bottom: 440px;
+      }
+
+      &__img {
+         background: url("../images/program/tablet.jpg");
+         background-size: cover;
+
+         position: absolute;
+         width: 403px;
+         height: 282px;
+         top: -135px;
+         right: 10px;
+      }
+   }
+   .program__list-item-box {
+      display: grid;
+      grid-template-columns: 176px 176px 176px;
+
+      &sub {
+         margin-right: 0px;
+         &:last-child {
+            margin-right: 0;
+         }
+      }
+   }
+}
+
+@media screen and (min-width: 1280px) {
+   .container {
+      padding-left: 35px;
+      padding-right: 35px;
+      width: 1280px;
+   }
+
+   .program {
+      &__title {
+         font-size: 42px;
+         text-align: left;
+      }
+      &__container-line {
+         width: 100%;
+         margin: 0 auto;
+      }
+      &__line {
+         border-top: 2px solid #546264;
+         border-right: none;
+         width: 1280px;
+         height: 2px;
+         margin: 0 auto;
+         top: 0;
+         left: -36px;
+      }
+
+      &__img {
+         background: url("../images/program/desktop.jpg");
+         width: 527px;
+         height: 374px;
+         top: -135px;
+         left: 0;
+      }
+      &__list {
+         width: 188px;
+         margin: 0;
+         padding: 0;
+         padding-left: 36px;
+
+         &:first-child {
+            padding-left: 0;
+         }
+
+         &-itemh3 {
+            font-size: 19px;
+
+            &::before {
+               top: -23px;
+               left: 0;
+            }
+         }
+
+         &-itemh4 {
+            font-size: 18px;
+         }
+
+         &-item {
+            font-size: 15px;
+         }
+      }
+
+      &__container-list-box {
+         display: flex;
+         justify-content: space-between;
+      }
+   }
+}
