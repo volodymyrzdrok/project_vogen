@@ -21,7 +21,7 @@
     margin: 0px;
 }
 
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 767px) {
     .post {
         display: flex;
         flex-direction: column;
@@ -29,12 +29,13 @@
     }
     .post__item {
         margin-bottom: 25px;
-    }
-    .post__item:last-child {
-        margin-bottom: 0px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
     }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
     .post {
         display: flex;
         justify-content: space-between;

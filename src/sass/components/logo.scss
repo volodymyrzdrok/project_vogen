@@ -22,9 +22,11 @@
     text-transform: uppercase;
     letter-spacing: 0.46px;
 }
+
 .logo__bottom--difcolor {
     color: $hover-color;
 }
+
 @media screen and (max-width: 767px) {
     .logo {
         font-size: 15px;
@@ -40,7 +42,7 @@
     }
 }
 
-@media screen and (max-width: 1278px) {
+@media screen and (max-width: 1279px) {
     .logo {
         position: relative;
         z-index: 3;

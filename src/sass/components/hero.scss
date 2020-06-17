@@ -28,11 +28,11 @@
     background-color: $hover-color;
     color: $white-color;
     transition: all $animation;
-}
-.callback-button--digcolor:hover,
-.callback-button--digcolor:focus {
-    background-color: $white-color;
-    color: $hover-color;
+    &:hover,
+    &:focus {
+        background-color: $white-color;
+        color: $hover-color;
+    }
 }
 
 @media screen and (max-width: 767px) {

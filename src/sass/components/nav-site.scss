@@ -15,11 +15,13 @@
     letter-spacing: 0.45px;
 
     transition: color $animation;
+
+    &:focus,
+    &:hover {
+        color: $hover-color;
+    }
 }
-.nav-site__link:focus,
-.nav-site__link:hover {
-    color: $hover-color;
-}
+
 .callback-button {
     display: flex;
     justify-content: center;
@@ -38,12 +40,13 @@
     border-radius: 1px;
 
     transition: all $animation;
-}
-.callback-button:focus,
-.callback-button:hover {
-    background-color: $hover-color;
-    color: $white-color;
-    box-shadow: $shadow;
+
+    &:focus,
+    &:hover {
+        background-color: $hover-color;
+        color: $white-color;
+        box-shadow: $shadow;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -73,6 +76,10 @@
         padding-top: 38px;
         min-height: 145px;
     }
+    .nav-site {
+        padding-top: 174px;
+        min-height: 600px;
+    }
     .nav-site__link {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -100,13 +107,15 @@
         margin-left: auto;
 
         transition: all $animation;
+
+        &:focus,
+        &:hover {
+            background-color: $hover-color;
+            color: $white-color;
+            box-shadow: $shadow;
+        }
     }
-    .callback-button__tabfocus,
-    .callback-button__tab:hover {
-        background-color: $hover-color;
-        color: $white-color;
-        box-shadow: $shadow;
-    }
+
     .d-none__tab {
         display: none;
     }
@@ -133,11 +142,5 @@
     }
     .callback-button {
         margin-left: 22px;
-    }
-}
-@media screen and (min-width: 768px) and (max-width: 1278px) {
-    .nav-site {
-        padding-top: 174px;
-        min-height: 600px;
     }
 }
