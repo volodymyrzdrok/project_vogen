@@ -92,6 +92,10 @@
     .nav-home__burger--active .nav-site__link {
         color: $white-color;
     }
+
+    .nav-home__burger--active .nav-site__link:hover {
+        color: $hover-color;
+    }
     .toggle-white {
         color: $white-color;
     }
