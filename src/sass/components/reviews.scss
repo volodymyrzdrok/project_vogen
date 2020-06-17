@@ -1,0 +1,252 @@
+.reviews {
+  margin-top: 50px;
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 80px;
+  }
+
+  &__title {
+    line-height: 26px;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      line-height: 62px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      line-height: 62px;
+    }
+  }
+  &__sl {
+    padding-bottom: 30px;
+    padding-top: 22px;
+    outline: none;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      display: flex !important;
+      justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1280px) {
+      display: flex !important;
+      justify-content: space-between;
+    }
+  }
+}
+
+.slider {
+  padding-bottom: 50px;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-bottom: 70px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 100px;
+  }
+
+  &__1 {
+    margin: 0 auto;
+    width: 280px;
+    box-shadow: $shadow;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      width: 688px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 1070px;
+    }
+  }
+
+  &__images {
+    text-align: center;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      max-width: 30%;
+      margin: 20px 0 0 35px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      max-width: 30%;
+      margin: 40px 0 0 85px;
+    }
+  }
+  &__img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__svg {
+    margin-top: 20px;
+    width: 30px;
+    height: 19px;
+    min-width: 25px;
+    min-height: 14px;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      width: 35px;
+      height: 24px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 40px;
+      height: 29px;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    margin: 0 27px;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      max-width: 70%;
+      text-align: left;
+    }
+
+    @media screen and (min-width: 1280px) {
+      max-width: 70%;
+      padding-right: 100px;
+      text-align: left;
+    }
+  }
+
+  &__name {
+    font-family: $ff-montserrat;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 29px;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      font-size: 18px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 25px;
+    }
+  }
+
+  &__graduate {
+    font-family: $ff-montserrat;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    color: $secondary-color;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      font-size: 13px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 13px;
+    }
+  }
+  &__note {
+    font-family: $ff-montserrat;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+    color: $general-color;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 29px;
+    }
+  }
+
+  &__hide {
+    display: none;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      display: inline;
+    }
+
+    @media screen and (min-width: 1280px) {
+      display: inline;
+    }
+  }
+
+  &__2 {
+    position: relative;
+    width: 280px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 950px;
+    }
+
+    .slick-current img {
+      border: 3px $hover-color solid;
+      transition: all $animation;
+    }
+  }
+
+  &__underline {
+    text-decoration: underline;
+  }
+}
+
+.sl2__list {
+  padding-left: 20px;
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 50px;
+  }
+}
+
+.s12__cards {
+  outline: none;
+  cursor: pointer;
+}
+
+.s12__cards img {
+  border: 3px transparent solid;
+  border-radius: 50%;
+  &:hover,
+  &:focus {
+    border-color: $hover-color;
+    transition: all $animation;
+  }
+}
+
+.button-slide {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.next {
+  background-image: url('../../images/arrows/right-arrow.png');
+  background-size: cover;
+  position: absolute;
+  top: 20px;
+  left: 295px;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    left: 470px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 1085px;
+    top: 160px;
+  }
+}
+
+.prev {
+  background-image: url('../../images/arrows/left-arrow.png');
+  background-size: cover;
+  position: absolute;
+  top: 20px;
+  left: -42px;
+
+  @media screen and (min-width: 1280px) {
+    top: 160px;
+    left: -42px;
+  }
+}

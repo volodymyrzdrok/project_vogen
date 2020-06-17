@@ -1,0 +1,50 @@
+.logo {
+    color: #000000;
+    font-family: $ff-montserrat;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 0px;
+    letter-spacing: 0.75px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo__icon {
+    width: 30px;
+    height: 40px;
+    fill: $hover-color;
+    margin-bottom: -10px;
+}
+.logo__bottom {
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 2.4;
+    text-transform: uppercase;
+    letter-spacing: 0.46px;
+}
+
+.logo__bottom--difcolor {
+    color: $hover-color;
+}
+
+@media screen and (max-width: 767px) {
+    .logo {
+        font-size: 15px;
+    }
+    .logo__icon {
+        width: 25px;
+        height: 30px;
+    }
+    .logo__bottom {
+        font-size: 5px;
+        line-height: 4;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .logo {
+        position: relative;
+        z-index: 3;
+    }
+}
