@@ -16,6 +16,7 @@
       line-height: 62px;
     }
   }
+
   &__sl {
     padding-bottom: 30px;
     padding-top: 22px;
@@ -115,6 +116,7 @@
     font-weight: 800;
     font-size: 13px;
     line-height: 29px;
+    letter-spacing: 1.5px;
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
       font-size: 18px;
@@ -131,21 +133,30 @@
     font-size: 11px;
     line-height: 16px;
     color: $secondary-color;
+    letter-spacing: 1px;
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
-      font-size: 13px;
+      font-size: 12px;
+      width: 440px;
     }
 
     @media screen and (min-width: 1280px) {
       font-size: 13px;
+      width: 475px;
     }
   }
+
   &__note {
     font-family: $ff-montserrat;
     font-weight: 500;
     font-size: 11px;
     line-height: 20px;
     color: $general-color;
+    letter-spacing: 1px;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      font-size: 13px;
+    }
 
     @media screen and (min-width: 1280px) {
       font-size: 16px;
@@ -227,10 +238,10 @@
   background-size: cover;
   position: absolute;
   top: 20px;
-  left: 295px;
+  left: 285px;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    left: 470px;
+    left: 460px;
   }
 
   @media screen and (min-width: 1280px) {
