@@ -38,6 +38,12 @@
         color: $hover-color;
         border: none;
     }
+
+
+    animation-name: tada;
+    animation-duration: 600ms;
+    animation-delay: 2300ms;
+    animation-fill-mode: backwards;
 }
 
 

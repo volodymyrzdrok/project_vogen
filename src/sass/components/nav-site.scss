@@ -2,6 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    
+  
 }
 
 .nav-site__link {
@@ -79,6 +82,7 @@
     .nav-site {
         padding-top: 174px;
         min-height: 600px;
+
     }
     .nav-site__link {
         padding-top: 10px;
@@ -114,6 +118,8 @@
             color: $white-color;
             box-shadow: $shadow;
         }
+
+
     }
 
     .d-none__tab {
@@ -129,6 +135,13 @@
     .nav-site__container {
         display: flex;
         align-items: center;
+
+
+        animation-name: zoomIn;
+        animation-duration: 400ms;
+       animation-delay: 400ms;
+         animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+       animation-fill-mode: backwards;
     }
     .callback-button__tab {
         display: none;
@@ -142,5 +155,11 @@
     }
     .callback-button {
         margin-left: 22px;
+
+        
+        animation-name: tada;
+        animation-duration: 600ms;
+        animation-delay: 2300ms;
+        animation-fill-mode: backwards;
     }
 }
