@@ -1,17 +1,16 @@
 .reg {
   &__bg {
-    height: 538px;
+    min-height: 538px;
     max-width: 1680px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(
         0deg,
-        rgba(36, 36, 36, 0.88),
-        rgba(36, 36, 36, 0.88)
+        rgba(17, 21, 23,0.88),
+        rgba(17, 21, 23,0.88)
       ),
       url(../images/reg-bg/1.jpg);
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.5);
     background-position: right;
 
     @media screen and (min-width: 1280px) {
@@ -41,6 +40,8 @@
     line-height: 26px;
     font-weight: 800;
     color: $white-color;
+    letter-spacing: 1.5px;
+
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
       font-size: 22px;
@@ -49,7 +50,7 @@
 
     @media screen and (min-width: 1280px) {
       font-size: 37.5px;
-      line-height: 38px;
+      line-height: 48px;
     }
   }
 
@@ -69,6 +70,7 @@
     @media screen and (min-width: 1280px) {
       font-size: 18px;
       width: 570px;
+      line-height: 1.4;
     }
   }
 
@@ -162,7 +164,8 @@
     &:focus {
       color: $hover-color;
       background-color: $white-color;
-      border: 1px solid $hover-color;
+      border: none;
+      box-shadow: $shadow;
       transition: $animation;
     }
   }
@@ -229,12 +232,18 @@
     }
   }
 
+
+
   &__phone-number {
     font-family: $ff-montserrat;
     font-size: 18px;
     line-height: 38px;
     font-weight: 600;
     margin: 34px 0 0 0;
+    text-decoration: none;
+    color: $title-color;
+    position: relative;
+
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
       padding-bottom: 50px;
@@ -250,6 +259,17 @@
     }
   }
 
+  .reg__phone-number--line{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height:29px;
+    background-color: #e0e0e0;;
+    left: 317px;
+    top: 5px;
+  
+
+  }
   &__inst-icon {
     width: 37px;
     height: 37px;
