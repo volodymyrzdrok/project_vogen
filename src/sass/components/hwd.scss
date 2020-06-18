@@ -86,18 +86,22 @@
 @media screen and (min-width: 768px) and (max-width: 1279px) {
 
     .hwd-title {
+        margin-top: 50px;
         font-style: 26px;
+        text-align: left;
     }
 
     .hwd-list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
+        margin-top: 20px;
     }
 
     .hwd-list_card {
-        width: calc(100% / 2 - 20px);
+        width: 330px;
         margin-bottom: 25px;
+
     }
 
     .hwd-list_title {
@@ -106,12 +110,15 @@
 
     .hwd-list_sub-title {
         font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 1px;
     }
 }
 
 @media screen and (min-width: 1280px) {
 
     .hwd-title {
+        margin-top: 70px;
         text-align: left;
         font-size: 42px;
     }
@@ -136,5 +143,7 @@
 
     .hwd-list_sub-title {
         font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 1px;
     }
 }
