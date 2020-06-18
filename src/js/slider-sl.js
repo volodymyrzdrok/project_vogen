@@ -24,7 +24,7 @@ $('.slider__1').slick({
       },
     },
     {
-      breakpoint: 2000,
+      breakpoint: 3000,
       settings: {
         arrows: true,
         slidesToShow: 1,
@@ -63,7 +63,7 @@ $('.sl2__list').slick({
       },
     },
     {
-      breakpoint: 2000,
+      breakpoint: 3000,
       settings: {
         arrows: false,
         slidesToShow: 6,
