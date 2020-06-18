@@ -7,6 +7,12 @@
     letter-spacing: 0.75px;
     text-decoration: none;
     cursor: pointer;
+
+    animation-name: bounceInDown;
+    animation-duration: 400ms;
+    animation-delay: 600ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-fill-mode: backwards;
 }
 
 .logo__icon {
@@ -14,6 +20,12 @@
     height: 40px;
     fill: $hover-color;
     margin-bottom: -10px;
+
+
+    animation-name: tada;
+    animation-duration: 600ms;
+    animation-delay: 2300ms;
+    animation-fill-mode: backwards;
 }
 .logo__bottom {
     font-size: 9px;
