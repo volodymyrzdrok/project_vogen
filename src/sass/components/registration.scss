@@ -272,9 +272,14 @@
     background-color: #e0e0e0;;
     left: 317px;
     top: 5px;
-  
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      left: 236px;
+    }
 
   }
+
+  
+
   &__inst-icon {
     width: 37px;
     height: 37px;
