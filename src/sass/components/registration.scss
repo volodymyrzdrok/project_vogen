@@ -260,15 +260,28 @@
     }
   }
 
-  .reg__phone-number--line {
-    position: absolute;
-    content: '';
-    width: 1px;
-    height: 29px;
-    background-color: #e0e0e0;
-    left: 317px;
-    top: 5px;
+  .reg__phone-number--line{	  
+    position: absolute;	    
+    content: '';	  
+    width: 1px;	    
+    height:29px;	   
+    background-color: #e0e0e0;;	   
+   
+    top: 5px;	    
+    display: none;	
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {	
+      left: 232px;	
+      display: block;	
+    }	
+
+    @media screen and (min-width: 1280px) {	
+      left: 316px;	
+      display: block;	
+    }	
   }
+
+
   &__inst-icon {
     width: 37px;
     height: 37px;
