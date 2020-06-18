@@ -1,3 +1,5 @@
+
+
 .program {
    background-color: #111517;
 
@@ -31,6 +33,10 @@
       margin: 0 auto;
       width: 150px;
       padding-left: 34px;
+
+      &-item {
+         margin-top: 6px;
+      }
 
       &-itemh3 {
          color: white;
@@ -137,6 +143,7 @@
       grid-template-columns: 176px 176px 176px;
 
       &sub {
+         
          margin-right: 0px;
          &:last-child {
             margin-right: 0;
