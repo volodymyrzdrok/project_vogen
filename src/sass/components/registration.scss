@@ -148,6 +148,7 @@
     font-size: 11px;
     text-transform: uppercase;
     font-family: 'Tahoma';
+    transition:  $animation;
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
       margin: 30px auto;
