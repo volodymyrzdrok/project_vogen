@@ -163,9 +163,14 @@
     &:hover,
     &:focus {
       color: $hover-color;
+
+      background-color: transparent;
+      border: 1px solid $hover-color;
+
       background-color: $white-color;
       border: none;
       box-shadow: $shadow;
+
       transition: $animation;
     }
   }
