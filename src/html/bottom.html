@@ -1,44 +1,74 @@
-<section class="registration">
-  <div class="container registrations">
-    <h3 class="tittle">Регистрация на <span class="logo__slogan_hell">бесплатную</span> телефонную <span class="logo__slogan_hell">консультацию</span> по нюансам ЗНО по английскому языку</h3>
-    <p class="text">Оставь заявку на участие в <span class="logo__slogan_hell">бесплатном занятии.</span> С вами свяжется консультант 
-      и ответит на вопросы.</p>
-    <form class="form" action="">
-      <input class="form_items" name="name" placeholder="Имя*" required>
-      <input class="form_items" name="tel" placeholder="Телефон*" required>
-    </form>
-    <button class="reg_btn">Хочу на бесплатное занятие</button>
+<section class="reg">
+  <div class="reg__bg">
+    <div class="container">
+      <div class="reg__title">
+        <h2 class="reg__title1">
+          Регистрация на <span class="span__color">бесплатную</span>телефонную
+          <span class="span__color">консультацию</span> по нюансам ЗНО по
+          английскому языку
+        </h2>
+        <p class="reg__text">
+          Оставь заявку на участие в
+          <span class="span__color">бесплатном занятии.</span> С вами свяжется
+          консультант и ответит на вопросы
+        </p>
+      </div>
+
+      <form class="reg__form" action="#" method="POST">
+        <input
+          class="reg__form-name"
+          type="text"
+          name="name"
+          required
+          placeholder="Имя*"
+        />
+        <input
+          class="reg__form-number"
+          type="tel"
+          name="number"
+          required
+          placeholder="Телефон*"
+        />
+        <button class="reg__form-btn">хочу на бесплатное занятие</button>
+      </form>
+    </div>
   </div>
-</section>
-<section class="contact">
-  <div class="container contacts">
-      
-    <div class="tel">
-      <a class="tel__link" href="./">
-      <svg class="svg__item_call">
-        <use href="../images/sprite.svg#call"></use>
-      </svg>
-      
-      <p class="tel__number">+38 (000) 000 00 00</p>
+
+  <div class="container reg__contact">
+    <div class="reg__contact-flex">
+      <div class="reg__phone">
+        <svg class="reg__phone-svg">
+          <use href="./images/sprite.svg#call"></use>
+        </svg>
+        <p class="reg__phone-number">+38 (000) 000 00 00</p>
+      </div>
+      <div class="reg__inst">
+        <a href="#">
+          <img
+            class="reg__inst-icon"
+            src="./images/instagram.png"
+            alt="instagram"
+            width="37"
+            height="37"
+          />
+        </a>
+      </div>
+    </div>
+    <a class="reg__link-logo" href="#">
+      <div class="reg__logo">
+        Hell<svg class="reg__logo-icon">
+          <use href="./images/sprite.svg#fire"></use></svg
+        >EN
+        <br />
+        <span class="reg__logo-text">
+          <span class="span__color"> Адский </span> английский</span
+        >
+      </div>
     </a>
-    </div>
-    <div class="inst">
-      <a class="inst_link" href="./">
-      <img class="inst__logo" src="../images/bottom/instagram.svg" width="32" height="32" alt="instagram">
-      </a>
-    </div>
-          <a class="logo" href="./">Hell<svg class="logo__icon">
-            <use href="./images/sprite.svg#fire"></use></svg>EN
-            <br/>
-            <span class="logo__bottom">
-            <b class="logo__bottom--difcolor"> Адский </b> английский</span>
-          </a>
   </div>
 </section>
-<section class="footer">
-  <footer>
-    <div class="container footers">
-      <p class="allrights">@ Все права защищены, 2019</p>
-    </div>
-  </footer>
-</section>
+<footer class="footer">
+  <div class="container">
+    <p class="footer__text">@ Все права защищены, 2019</p>
+  </div>
+</footer>
