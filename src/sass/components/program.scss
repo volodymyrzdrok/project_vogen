@@ -1,17 +1,14 @@
-
-
 .program {
    background-color: #111517;
 
    &__container-line {
       position: relative;
-      width: 767px;
    }
    &__line {
       display: inline-block;
       border-right: 2px solid #546264;
       width: 2px;
-      height: 1000px;
+      height: 1098px;
       margin-left: 72px;
       position: absolute;
       top: 6px;
@@ -143,7 +140,6 @@
       grid-template-columns: 176px 176px 176px;
 
       &sub {
-         
          margin-right: 0px;
          &:last-child {
             margin-right: 0;
